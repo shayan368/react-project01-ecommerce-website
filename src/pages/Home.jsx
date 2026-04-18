@@ -1,14 +1,19 @@
-import React from 'react'
-import Slider from '../components/home/Slider'
-import Handpicked from '../components/home/Handpicked'
+import Hero from "../components/home/Hero";
+import Categories from "../components/home/Categories";
+import Featured from "../components/home/Featured";
+import FlashSale from "../components/home/FlashSale";
+import MostViewed from "../components/home/MostViewed";
+import Features from "../components/home/Features";
 
-const Home = () => {
+export default function Home() {
     return (
-        <div>
-            {/* <Slider /> */}
-            <Handpicked />
-        </div>
-    )
+        <>
+            <Hero />
+            <Featured />
+            <Categories />
+            <FlashSale />
+            <MostViewed />
+            <Features />
+        </>
+    );
 }
-
-export default Home
