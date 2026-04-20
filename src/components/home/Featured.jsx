@@ -14,7 +14,6 @@ export default function Featured() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-        {/* 🔵 LEFT BIG PRODUCT */}
         <div className="bg-[#f8f8f8] p-6 rounded shadow flex flex-col  relative">
 
           <img
@@ -44,14 +43,12 @@ export default function Featured() {
 
         <div className="lg:col-span-2 flex flex-col gap-4">
 
-          {/* 🔹 FIRST ROW → 2 PRODUCTS */}
           <div className="grid grid-cols-2 gap-4">
             {sideProducts.slice(0, 2).map((item) => (
               <ProductCard key={item.id} product={item} />
             ))}
           </div>
 
-          {/* 🔹 SECOND ROW → 3 PRODUCTS (ONLY ON LAPTOP) */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {sideProducts.slice(2, 5).map((item) => (
               <ProductCard key={item.id} product={item} />

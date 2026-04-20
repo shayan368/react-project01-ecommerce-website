@@ -14,7 +14,7 @@ export const categoryProducts = [
         price: 200,
         rating: 4,
         reviews: 8,
-        category: "Laptops",   // ✅ added
+        category: "Laptops",
         image: laptop,
     },
     {
@@ -85,7 +85,7 @@ export const categoryProducts = [
         price: 200,
         rating: 4,
         reviews: 8,
-        category: "Laptops",   // ✅ added
+        category: "Laptops",
         image: laptop,
     },
 ];

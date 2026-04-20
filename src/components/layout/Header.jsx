@@ -3,8 +3,7 @@ import { ShoppingCart, User, Search } from "lucide-react";
 export default function Header() {
     return (
         <>
-            {/* 🔵 TOP BAR */}
-            <div className="flex justify-between items-center px-6 py-2 text-sm bg-gray-50 border-b">
+            <div className="flex justify-between items-center px-6 py-2 text-sm border-b border-gray-200">
                 
                 <div className="flex gap-3">
                     <span>EN</span>
@@ -19,16 +18,13 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* 🔵 MAIN HEADER */}
             <div className="flex items-center justify-between px-6 py-4 bg-white">
 
-                {/* LOGO */}
                 <div className="text-2xl font-bold text-blue-600">
                     LOGO HERE
                 </div>
 
-                {/* SEARCH BAR */}
-                <div className="flex items-center border rounded overflow-hidden w-[50%] shadow-sm">
+                <div className="flex items-center border border-gray-300 rounded overflow-hidden w-[50%]">
 
                     <select className="px-3 py-2 bg-gray-100 outline-none">
                         <option>All Categories</option>
@@ -48,7 +44,6 @@ export default function Header() {
                     </button>
                 </div>
 
-                {/* ICONS */}
                 <div className="flex gap-5 items-center">
 
                     <div className="relative cursor-pointer">

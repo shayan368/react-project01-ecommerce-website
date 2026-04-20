@@ -5,7 +5,6 @@ export default function Hero() {
     return (
         <div className="bg-gray-100 px-6 lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between">
 
-            {/* LEFT TEXT */}
             <div className="mb-8 lg:mb-0">
                 <p className="text-gray-500 text-sm mb-2">Hot Sale</p>
 
@@ -18,7 +17,6 @@ export default function Hero() {
                 </button>
             </div>
 
-            {/* RIGHT IMAGE */}
             <img
                 src={img}
                 className="w-full max-w-md lg:max-w-xl object-contain"

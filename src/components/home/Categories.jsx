@@ -20,7 +20,6 @@ export default function Categories() {
     { name: "Accessories", icon: <CiDesktopMouse1 size={16} /> },
   ];
 
-  // ✅ FILTER LOGIC
   const filteredProducts =
     active === "All"
       ? categoryProducts
@@ -33,7 +32,6 @@ export default function Categories() {
         Categories
       </h2>
 
-      {/* 🔵 CATEGORY BAR */}
 
 <div className="flex flex-wrap gap-20 mb-8 pb-4 width-full">
         {categories.map((cat) => (
@@ -54,7 +52,6 @@ export default function Categories() {
 
       </div>
 
-      {/* 🔵 PRODUCTS GRID */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
         {filteredProducts.slice(0, 8).map((product) => (
