@@ -1,4 +1,5 @@
 
+import custompc from "../../assets/images/custompc.png";
 export default function CustomPCBanner() {
   return (
     <div className="px-6 lg:px-12 py-6">
@@ -14,6 +15,7 @@ export default function CustomPCBanner() {
             View Details
           </button>
         </div>
+      <img src={custompc} alt="Custom PC" className="w-1/2  object-cover" />
 
       </div>
 

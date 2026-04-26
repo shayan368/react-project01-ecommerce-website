@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import ProductCard from "../common/ProductCard";
-import { categoryProducts } from "../../data/categoryProducts";
+import { allProducts } from "../../data/allProducts";
 
 export default function FlashSale() {
   const saleEnd = new Date();
@@ -30,7 +29,7 @@ export default function FlashSale() {
     return () => clearInterval(timer);
   }, []);
 
-  const flashProducts = categoryProducts.slice(0, 3);
+ const flashProducts = allProducts.slice(0, 3);
 
   return (
     <div className="px-6 lg:px-12 py-10">
