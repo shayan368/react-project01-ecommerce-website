@@ -27,7 +27,7 @@ export default function Categories() {
     <div className="w-full px-6 lg:px-12 py-10">
       <h2 className="text-2xl font-semibold mb-6">Categories</h2>
 
-      <div className="flex flex-wrap gap-24 mb-8">
+      <div className="flex flex-wrap gap-3 md:gap-24 mb-8">
         {categories.map((cat) => (
           <button
             key={cat.name}

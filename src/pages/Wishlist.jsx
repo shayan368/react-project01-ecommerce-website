@@ -32,7 +32,7 @@ export default function Wishlist() {
 
       <div className="px-6 lg:px-12 py-10">
 
-        <div className="grid grid-cols-4 text-sm font-semibold border-b-4 border-[#f6f7f8] pb-3 mb-4">
+        <div className="hidden md:grid grid-cols-4 text-sm font-semibold border-b pb-3 mb-4">
           <p>PRODUCT</p>
           <p>PRICE</p>
           <p>STATUS</p>
@@ -47,7 +47,7 @@ export default function Wishlist() {
           wishlist.map((item) => (
             <div
               key={item.id}
-              className="grid grid-cols-4 items-center border-b-4 border-[#f6f7f8] py-4 text-sm"
+              className="grid grid-cols-1 md:grid-cols-4 gap-3 items-center"
             >
               <div className="flex items-center gap-4">
                 <button onClick={() => removeItem(item.id)}>

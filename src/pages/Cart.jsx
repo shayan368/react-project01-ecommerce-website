@@ -55,7 +55,7 @@ export default function Cart() {
       <div className="px-6 lg:px-12 py-10">
 
 
-        <div className="grid grid-cols-4 font-semibold border-b pb-3 mb-4 text-sm">
+        <div className="hidden md:grid grid-cols-4 font-semibold border-b pb-3 mb-4 text-sm">
           <p>PRODUCT</p>
           <p>PRICE</p>
           <p>QTY</p>
@@ -72,7 +72,7 @@ export default function Cart() {
         {cart.map((item) => (
           <div
             key={item.id}
-            className="grid grid-cols-4 items-center py-4 border-b text-sm"
+            className="grid grid-cols-1 md:grid-cols-4 items-center gap-3 py-4 border-b text-sm"
           >
             <div className="flex items-center gap-3">
               <FaTimes

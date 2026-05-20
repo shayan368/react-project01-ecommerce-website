@@ -16,8 +16,7 @@ export default function Hero() {
             slidesPerView={1}
         >
             <SwiperSlide>
-                <div className="bg-gray-100 px-6 lg:px-12 py-12 flex flex-col lg:flex-row items-center justify-between">
-                    <div className="mb-8 lg:mb-0">
+<div className="bg-gray-100 px-4 md:px-12 py-8 flex flex-col lg:flex-row items-center justify-between">                    <div className="mb-8 lg:mb-0">
                         <p className="text-gray-500 text-sm mb-2">Hot Sale</p>
 
                         <h1 className="text-3xl lg:text-5xl font-bold leading-tight mb-6">
@@ -31,7 +30,7 @@ export default function Hero() {
 
                     <img
                         src={img}
-                        className="w-full max-w-md lg:max-w-xl object-contain"
+                        className="w-full max-w-xs md:max-w-md lg:max-w-xl"
                     />
                 </div>
             </SwiperSlide>
